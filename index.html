@@ -7,185 +7,366 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css">
     <title>Document</title>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 </head>
 
 <body>
-    <div class="redbg">
-        <span class="white curr" id="date">26 June 21</span>
-<div class='t-center'><h2 class="curr white">Currency</h2></div>
-<input class="margineleft10px Input curr white xx-large curr t-center" type="Number">
+    <div class="block bg-cyan relative">
+        <span class="white top-5 curr" id="date">26 June 21</span>
+<div class='t-center'><h2 class="curr currencyInp white top-5">Currency</h2></div>
+<input class="margineleft10px Input curr white xxx-large curr t-center" type="Number">
+<span class="absolute iconify" data-icon="mdi-swap-vertical" data-inline="false"></span>
+
 <div class="t-right currency-container">
+            <select class="absolute currency inline-block" id="currencyList">
 
-            <select class="currency inline-block" id="currencyList">
+                <option disabled>Most popular</option>
 
+                <option class="USD">USD</option>
+    
                 <option disabled>──────────</option>
-
-                <option class="curr">Currency</option>
-                <option value="AED">AED</option>
-                <option value="AFN">AFN</option>
-                <option value="ALL">ALL</option>
-                <option value="AMD">AMD</option>
-                <option value="ANG">ANG</option>
-                <option value="AOA">AOA</option>
-                <option value="ARS">ARS</option>
-                <option value="AUD">AUD</option>
-                <option value="AWG">AWG</option>
-                <option value="AZN">AZN</option>
-                <option value="BAM">BAM</option>
-                <option value="BBD">BBD</option>
-                <option value="BDT">BDT</option>
-                <option value="BGN">BGN</option>
-                <option value="BHD">BHD</option>
-                <option value="BIF">BIF</option>
-                <option value="BMD">BMD</option>
-                <option value="BND">BND</option>
-                <option value="BOB">BOB</option>
-                <option value="BRL">BRL</option>
-                <option value="BSD">BSD</option>
-                <option value="BTN">BTN</option>
-                <option value="BWP">BWP</option>
-                <option value="BYN">BYN</option>
-                <option value="BZD">BZD</option>
-                <option value="CAD">CAD</option>
-                <option value="CDF">CDF</option>
-                <option value="CHF">CHF</option>
-                <option value="CLP">CLP</option>
-                <option value="CNY">CNY</option>
-                <option value="COP">COP</option>
-                <option value="CRC">CRC</option>
-                <option value="CUC">CUC</option>
-                <option value="CUP">CUP</option>
-                <option value="CVE">CVE</option>
-                <option value="CZK">CZK</option>
-                <option value="DJF">DJF</option>
-                <option value="DKK">DKK</option>
-                <option value="DOP">DOP</option>
-                <option value="DZD">DZD</option>
-                <option value="EGP">EGP</option>
-                <option value="ERN">ERN</option>
-                <option value="ETB">ETB</option>
-                <option value="EUR">EUR</option>
-                <option value="FJD">FJD</option>
-                <option value="FKP">FKP</option>
-                <option value="GBP">GBP</option>
-                <option value="GEL">GEL</option>
-                <option value="GGP">GGP</option>
-                <option value="GHS">GHS</option>
-                <option value="GIP">GIP</option>
-                <option value="GMD">GMD</option>
-                <option value="GNF">GNF</option>
-                <option value="GTQ">GTQ</option>
-                <option value="GYD">GYD</option>
-                <option value="HKD">HKD</option>
-                <option value="HNL">HNL</option>
-                <option value="HKD">HKD</option>
-                <option value="HRK">HRK</option>
-                <option value="HTG">HTG</option>
-                <option value="HUF">HUF</option>
-                <option value="IDR">IDR</option>
-                <option value="ILS">ILS</option>
-                <option value="IMP">IMP</option>
-                <option value="INR">INR</option>
-                <option value="IQD">IQD</option>
-                <option value="IRR">IRR</option>
-                <option value="ISK">ISK</option>
-                <option value="JEP">JEP</option>
-                <option value="JMD">JMD</option>
-                <option value="JOD">JOD</option>
-                <option value="JPY">JPY</option>
-                <option value="KES">KES</option>
-                <option value="KGS">KGS</option>
-                <option value="KHR">KHR</option>
-                <option value="KID">KID</option>
-                <option value="KMF">KMF</option>
-                <option value="KPW">KPW</option>
-                <option value="KRW">KRW</option>
-                <option value="KWD">KWD</option>
-                <option value="KYD">KYD</option>
-                <option value="KZT">KZT</option>
-                <option value="LAK">LAK</option>
-                <option value="LBP">LBP</option>
-                <option value="LKR">LKR</option>
-                <option value="LRD">LRD</option>
-                <option value="LSL">LSL</option>
-                <option value="LYD">LYD</option>
-                <option value="MAD">MAD</option>
-                <option value="MDL">MDL</option>
-                <option value="MGA">MGA</option>
-                <option value="MKD">MKD</option>
-                <option value="MMK">MK</option>
-                <option value="MNT">MNT</option>
-                <option value="MOP">MOP</option>
-                <option value="MRU">MRU</option>
-                <option value="MUR">MUR</option>
-                <option value="MVR">MVR</option>
-                <option value="MWK">MWK</option>
-                <option value="MXN">MXN</option>
-                <option value="MYR">MYR</option>
-                <option value="MZN">MZN</option>
-                <option value="NAD">NAD</option>
-                <option value="NGN">NGN</option>
-                <option value="NIO">NIO</option>
-                <option value="NOK">NOK</option>
-                <option value="NPR">NPR</option>
-                <option value="NZD">NZD</option>
-                <option value="OMR">OMR</option>
-                <option value="PAB">PAB</option>
-                <option value="PEN">PEN</option>
-                <option value="PGK">PGK</option>
-                <option value="PHP">PHP</option>
-                <option value="PKR">PKR</option>
-                <option value="PLN">PLN</option>
-                <option value="PRB">PRB</option>
-                <option value="PYG">PYG</option>
-                <option value="QAR">QAR</option>
-                <option value="RON">RON</option>
-                <option value="RSD">RSD</option>
-                <option value="RUB">RUB</option>
-                <option value="RWF">RWF</option>
-                <option value="SAR">SAR</option>
-                <option value="SEK">SEK</option>
-                <option value="SGD">SGD</option>
-                <option value="SHP">SHP</option>
-                <option value="SLL">SLL</option>
-                <option value="SLS">SLS</option>
-                <option value="SOS">SOS</option>
-                <option value="SRD">SRD</option>
-                <option value="SSP">SSP</option>
-                <option value="STN">STN</option>
-                <option value="SYP">SYP</option>
-                <option value="SZL">SZL</option>
-                <option value="THB">THB</option>
-                <option value="TJS">TJS</option>
-                <option value="TMT">TMT</option>
-                <option value="TND">TND</option>
-                <option value="TOP">TOP</option>
-                <option value="TRY">TRY</option>
-                <option value="TTD">TTD</option>
-                <option value="TVD">TVD</option>
-                <option value="TWD">TWD</option>
-                <option value="TZS">TZS</option>
-                <option value="UAH">UAH</option>
-                <option value="UGX">UGX</option>
-                <option value="USD">USD</option>
-                <option value="UYU">UYU</option>
-                <option value="UZS">UZS</option>
-                <option value="VES">VES</option>
-                <option value="VND">VND</option>
-                <option value="VUV">VUV</option>
-                <option value="WST">WST</option>
-                <option value="XAF">XAF</option>
-                <option value="XCD">XCD</option>
-                <option value="XOF">XOF</option>
-                <option value="XPF">XPF</option>
-                <option value="ZAR">ZAR</option>
-                <option value="ZMW">ZMW</option>
-                <option value="ZWB">ZWB</option>
+                <option class="AED" id="AED" value="AED">AED</option>
+                <option class="AFN" id="AFN" value="AFN">AFN</option>
+                <option class="ALL" id="ALL" value="ALL">ALL</option>
+                <option class="AMD" id="AMD" value="AMD">AMD</option>
+                <option class="ANG" id="ANG" value="ANG">ANG</option>
+                <option class="AOA" id="AOA" value="AOA">AOA</option>
+                <option class="ARS" id="ARS" value="ARS">ARS</option>
+                <option class="AUD" id="AUD" value="AUD">AUD</option>
+                <option class="AWG" id="AWG" value="AWG">AWG</option>
+                <option class="AZN" id="AZN" value="AZN">AZN</option>
+                <option class="BAM" id="BAM" value="BAM">BAM</option>
+                <option class="BBD" id="BBD" value="BBD">BBD</option>
+                <option class="BDT" id="BDT" value="BDT">BDT</option>
+                <option class="BGN" id="BGN" value="BGN">BGN</option>
+                <option class="BHD" id="BHD" value="BHD">BHD</option>
+                <option class="BIF" id="BIF" value="BIF">BIF</option>
+                <option class="BMD" id="BMD" value="BMD">BMD</option>
+                <option class="BND" id="BND" value="BND">BND</option>
+                <option class="BOB" id="BOB" value="BOB">BOB</option>
+                <option class="BRL" id="BRL" value="BRL">BRL</option>
+                <option class="BSD" id="BSD" value="BSD">BSD</option>
+                <option class="BTN" id="BTN" value="BTN">BTN</option>
+                <option class="BWP" id="BWP" value="BWP">BWP</option>
+                <option class="BYN" id="BYN" value="BYN">BYN</option>
+                <option class="BZD" id="BZD" value="BZD">BZD</option>
+                <option class="CAD" id="CAD" value="CAD">CAD</option>
+                <option class="CDF" id="CDF" value="CDF">CDF</option>
+                <option class="CHF" id="CHF" value="CHF">CHF</option>
+                <option class="CLP" id="CLP" value="CLP">CLP</option>
+                <option class="CNY" id="CNY" value="CNY">CNY</option>
+                <option class="COP" id="COP" value="COP">COP</option>
+                <option class="CRC" id="CRC" value="CRC">CRC</option>
+                <option class="CUC" id="CUC" value="CUC">CUC</option>
+                <option class="CUP" id="CUP" value="CUP">CUP</option>
+                <option class="CVE" id="CVE" value="CVE">CVE</option>
+                <option class="CZK" id="CZK" value="CZK">CZK</option>
+                <option class="DJF" id="DJF" value="DJF">DJF</option>
+                <option class="DKK" id="DKK" value="DKK">DKK</option>
+                <option class="DOP" id="DOP" value="DOP">DOP</option>
+                <option class="DZD" id="DZD" value="DZD">DZD</option>
+                <option class="EGP" id="EGP" value="EGP">EGP</option>
+                <option class="ERN" id="ERN" value="ERN">ERN</option>
+                <option class="ETB" id="ETB" value="ETB">ETB</option>
+                <option class="EUR" id="EUR" value="EUR">EUR</option>
+                <option class="FJD" id="FJD" value="FJD">FJD</option>
+                <option class="FKP" id="FKP" value="FKP">FKP</option>
+                <option class="GBP" id="GBP" value="GBP">GBP</option>
+                <option class="GEL" id="GEL" value="GEL">GEL</option>
+                <option class="GGP" id="GGP" value="GGP">GGP</option>
+                <option class="GHS" id="GHS" value="GHS">GHS</option>
+                <option class="GIP" id="GIP" value="GIP">GIP</option>
+                <option class="GMD" id="GMD" value="GMD">GMD</option>
+                <option class="GNF" id="GNF" value="GNF">GNF</option>
+                <option class="GTQ" id="GTQ" value="GTQ">GTQ</option>
+                <option class="GYD" id="GYD" value="GYD">GYD</option>
+                <option class="HKD" id="HKD" value="HKD">HKD</option>
+                <option class="HNL" id="HNL" value="HNL">HNL</option>
+                <option class="HKD" id="HKD" value="HKD">HKD</option>
+                <option class="HRK" id="HRK" value="HRK">HRK</option>
+                <option class="HTG" id="HTG" value="HTG">HTG</option>
+                <option class="HUF" id="HUF" value="HUF">HUF</option>
+                <option class="IDR" id="IDR" value="IDR">IDR</option>
+                <option class="ILS" id="ILS" value="ILS">ILS</option>
+                <option class="IMP" id="IMP" value="IMP">IMP</option>
+                <option class="INR" id="INR" value="INR">INR</option>
+                <option class="IQD" id="IQD" value="IQD">IQD</option>
+                <option class="IRR" id="IRR" value="IRR">IRR</option>
+                <option class="ISK" id="ISK" value="ISK">ISK</option>
+                <option class="JEP" id="JEP" value="JEP">JEP</option>
+                <option class="JMD" id="JMD" value="JMD">JMD</option>
+                <option class="JOD" id="JOD" value="JOD">JOD</option>
+                <option class="JPY" id="JPY" value="JPY">JPY</option>
+                <option class="KES" id="KES" value="KES">KES</option>
+                <option class="KGS" id="KGS" value="KGS">KGS</option>
+                <option class="KHR" id="KHR" value="KHR">KHR</option>
+                <option class="KID" id="KID" value="KID">KID</option>
+                <option class="KMF" id="KMF" value="KMF">KMF</option>
+                <option class="KPW" id="KPW" value="KPW">KPW</option>
+                <option class="KRW" id="KRW" value="KRW">KRW</option>
+                <option class="KWD" id="KWD" value="KWD">KWD</option>
+                <option class="KYD" id="KYD" value="KYD">KYD</option>
+                <option class="KZT" id="KZT" value="KZT">KZT</option>
+                <option class="LAK" id="LAK" value="LAK">LAK</option>
+                <option class="LBP" id="LBP" value="LBP">LBP</option>
+                <option class="LKR" id="LKR" value="LKR">LKR</option>
+                <option class="LRD" id="LRD" value="LRD">LRD</option>
+                <option class="LSL" id="LSL" value="LSL">LSL</option>
+                <option class="LYD" id="LYD" value="LYD">LYD</option>
+                <option class="MAD" id="MAD" value="MAD">MAD</option>
+                <option class="MDL" id="MDL" value="MDL">MDL</option>
+                <option class="MGA" id="MGA" value="MGA">MGA</option>
+                <option class="MKD" id="MKD" value="MKD">MKD</option>
+                <option class="MMK" id="MMK" value="MMK">MK</option>
+                <option class="MNT" id="MNT" value="MNT">MNT</option>
+                <option class="MOP" id="MOP" value="MOP">MOP</option>
+                <option class="MRU" id="MRU" value="MRU">MRU</option>
+                <option class="MUR" id="MUR" value="MUR">MUR</option>
+                <option class="MVR" id="MVR" value="MVR">MVR</option>
+                <option class="MWK" id="MWK" value="MWK">MWK</option>
+                <option class="MXN" id="MXN" value="MXN">MXN</option>
+                <option class="MYR" id="MYR" value="MYR">MYR</option>
+                <option class="MZN" id="MZN" value="MZN">MZN</option>
+                <option class="NAD" id="NAD" value="NAD">NAD</option>
+                <option class="NGN" id="NGN" value="NGN">NGN</option>
+                <option class="NIO" id="NIO" value="NIO">NIO</option>
+                <option class="NOK" id="NOK" value="NOK">NOK</option>
+                <option class="NPR" id="NPR" value="NPR">NPR</option>
+                <option class="NZD" id="NZD" value="NZD">NZD</option>
+                <option class="OMR" id="OMR" value="OMR">OMR</option>
+                <option class="PAB" id="PAB" value="PAB">PAB</option>
+                <option class="PEN" id="PEN" value="PEN">PEN</option>
+                <option class="PGK" id="PGK" value="PGK">PGK</option>
+                <option class="PHP" id="PHP" value="PHP">PHP</option>
+                <option class="PKR" id="PKR" value="PKR">PKR</option>
+                <option class="PLN" id="PLN" value="PLN">PLN</option>
+                <option class="PRB" id="PRB" value="PRB">PRB</option>
+                <option class="PYG" id="PYG" value="PYG">PYG</option>
+                <option class="QAR" id="QAR" value="QAR">QAR</option>
+                <option class="RON" id="RON" value="RON">RON</option>
+                <option class="RSD" id="RSD" value="RSD">RSD</option>
+                <option class="RUB" id="RUB" value="RUB">RUB</option>
+                <option class="RWF" id="RWF" value="RWF">RWF</option>
+                <option class="SAR" id="SAR" value="SAR">SAR</option>
+                <option class="SEK" id="SEK" value="SEK">SEK</option>
+                <option class="SGD" id="SGD" value="SGD">SGD</option>
+                <option class="SHP" id="SHP" value="SHP">SHP</option>
+                <option class="SLL" id="SLL" value="SLL">SLL</option>
+                <option class="SLS" id="SLS" value="SLS">SLS</option>
+                <option class="SOS" id="SOS" value="SOS">SOS</option>
+                <option class="SRD" id="SRD" value="SRD">SRD</option>
+                <option class="SSP" id="SSP" value="SSP">SSP</option>
+                <option class="STN" id="STN" value="STN">STN</option>
+                <option class="SYP" id="SYP" value="SYP">SYP</option>
+                <option class="SZL" id="SZL" value="SZL">SZL</option>
+                <option class="THB" id="THB" value="THB">THB</option>
+                <option class="TJS" id="TJS" value="TJS">TJS</option>
+                <option class="TMT" id="TMT" value="TMT">TMT</option>
+                <option class="TND" id="TND" value="TND">TND</option>
+                <option class="TOP" id="TOP" value="TOP">TOP</option>
+                <option class="TRY" id="TRY" value="TRY">TRY</option>
+                <option class="TTD" id="TTD" value="TTD">TTD</option>
+                <option class="TVD" id="TVD" value="TVD">TVD</option>
+                <option class="TWD" id="TWD" value="TWD">TWD</option>
+                <option class="TZS" id="TZS" value="TZS">TZS</option>
+                <option class="UAH" id="UAH" value="UAH">UAH</option>
+                <option class="UGX" id="UGX" value="UGX">UGX</option>
+                <option class="USD" id="USD" value="USD">USD</option>
+                <option class="UYU" id="UYU" value="UYU">UYU</option>
+                <option class="UZS" id="UZS" value="UZS">UZS</option>
+                <option class="VES" id="VES" value="VES">VES</option>
+                <option class="VND" id="VND" value="VND">VND</option>
+                <option class="VUV" id="VUV" value="VUV">VUV</option>
+                <option class="WST" id="WST" value="WST">WST</option>
+                <option class="XAF" id="XAF" value="XAF">XAF</option>
+                <option class="XCD" id="XCD" value="XCD">XCD</option>
+                <option class="XOF" id="XOF" value="XOF">XOF</option>
+                <option class="XPF" id="XPF" value="XPF">XPF</option>
+                <option class="ZAR" id="ZAR" value="ZAR">ZAR</option>
+                <option class="ZMW" id="ZMW" value="ZMW">ZMW</option>
+                <option class="ZWB" id="ZWB" value="ZWB">ZWB</option>
             </select>
 
         </div>
     </div>
+    <br>
+<div class="swapTo-container">
+    <div class='top-9 InputContainer'><input class="Input curr bluish top5 xxx-large curr t-center" type="Number">
+    </div>
+    <div class="t-right currency2-container">
+        <select class="currency2 inline-block" id="currencyList2">
+            <option disabled>Most popular</option>
 
+            <option class="USD">USD</option>
+
+            <option disabled>──────────</option>
+
+            <option class="AED" id="AED" value="AED">AED</option>
+            <option class="AFN" id="AFN" value="AFN">AFN</option>
+            <option class="ALL" id="ALL" value="ALL">ALL</option>
+            <option class="AMD" id="AMD" value="AMD">AMD</option>
+            <option class="ANG" id="ANG" value="ANG">ANG</option>
+            <option class="AOA" id="AOA" value="AOA">AOA</option>
+            <option class="ARS" id="ARS" value="ARS">ARS</option>
+            <option class="AUD" id="AUD" value="AUD">AUD</option>
+            <option class="AWG" id="AWG" value="AWG">AWG</option>
+            <option class="AZN" id="AZN" value="AZN">AZN</option>
+            <option class="BAM" id="BAM" value="BAM">BAM</option>
+            <option class="BBD" id="BBD" value="BBD">BBD</option>
+            <option class="BDT" id="BDT" value="BDT">BDT</option>
+            <option class="BGN" id="BGN" value="BGN">BGN</option>
+            <option class="BHD" id="BHD" value="BHD">BHD</option>
+            <option class="BIF" id="BIF" value="BIF">BIF</option>
+            <option class="BMD" id="BMD" value="BMD">BMD</option>
+            <option class="BND" id="BND" value="BND">BND</option>
+            <option class="BOB" id="BOB" value="BOB">BOB</option>
+            <option class="BRL" id="BRL" value="BRL">BRL</option>
+            <option class="BSD" id="BSD" value="BSD">BSD</option>
+            <option class="BTN" id="BTN" value="BTN">BTN</option>
+            <option class="BWP" id="BWP" value="BWP">BWP</option>
+            <option class="BYN" id="BYN" value="BYN">BYN</option>
+            <option class="BZD" id="BZD" value="BZD">BZD</option>
+            <option class="CAD" id="CAD" value="CAD">CAD</option>
+            <option class="CDF" id="CDF" value="CDF">CDF</option>
+            <option class="CHF" id="CHF" value="CHF">CHF</option>
+            <option class="CLP" id="CLP" value="CLP">CLP</option>
+            <option class="CNY" id="CNY" value="CNY">CNY</option>
+            <option class="COP" id="COP" value="COP">COP</option>
+            <option class="CRC" id="CRC" value="CRC">CRC</option>
+            <option class="CUC" id="CUC" value="CUC">CUC</option>
+            <option class="CUP" id="CUP" value="CUP">CUP</option>
+            <option class="CVE" id="CVE" value="CVE">CVE</option>
+            <option class="CZK" id="CZK" value="CZK">CZK</option>
+            <option class="DJF" id="DJF" value="DJF">DJF</option>
+            <option class="DKK" id="DKK" value="DKK">DKK</option>
+            <option class="DOP" id="DOP" value="DOP">DOP</option>
+            <option class="DZD" id="DZD" value="DZD">DZD</option>
+            <option class="EGP" id="EGP" value="EGP">EGP</option>
+            <option class="ERN" id="ERN" value="ERN">ERN</option>
+            <option class="ETB" id="ETB" value="ETB">ETB</option>
+            <option class="EUR" id="EUR" value="EUR">EUR</option>
+            <option class="FJD" id="FJD" value="FJD">FJD</option>
+            <option class="FKP" id="FKP" value="FKP">FKP</option>
+            <option class="GBP" id="GBP" value="GBP">GBP</option>
+            <option class="GEL" id="GEL" value="GEL">GEL</option>
+            <option class="GGP" id="GGP" value="GGP">GGP</option>
+            <option class="GHS" id="GHS" value="GHS">GHS</option>
+            <option class="GIP" id="GIP" value="GIP">GIP</option>
+            <option class="GMD" id="GMD" value="GMD">GMD</option>
+            <option class="GNF" id="GNF" value="GNF">GNF</option>
+            <option class="GTQ" id="GTQ" value="GTQ">GTQ</option>
+            <option class="GYD" id="GYD" value="GYD">GYD</option>
+            <option class="HKD" id="HKD" value="HKD">HKD</option>
+            <option class="HNL" id="HNL" value="HNL">HNL</option>
+            <option class="HKD" id="HKD" value="HKD">HKD</option>
+            <option class="HRK" id="HRK" value="HRK">HRK</option>
+            <option class="HTG" id="HTG" value="HTG">HTG</option>
+            <option class="HUF" id="HUF" value="HUF">HUF</option>
+            <option class="IDR" id="IDR" value="IDR">IDR</option>
+            <option class="ILS" id="ILS" value="ILS">ILS</option>
+            <option class="IMP" id="IMP" value="IMP">IMP</option>
+            <option class="INR" id="INR" value="INR">INR</option>
+            <option class="IQD" id="IQD" value="IQD">IQD</option>
+            <option class="IRR" id="IRR" value="IRR">IRR</option>
+            <option class="ISK" id="ISK" value="ISK">ISK</option>
+            <option class="JEP" id="JEP" value="JEP">JEP</option>
+            <option class="JMD" id="JMD" value="JMD">JMD</option>
+            <option class="JOD" id="JOD" value="JOD">JOD</option>
+            <option class="JPY" id="JPY" value="JPY">JPY</option>
+            <option class="KES" id="KES" value="KES">KES</option>
+            <option class="KGS" id="KGS" value="KGS">KGS</option>
+            <option class="KHR" id="KHR" value="KHR">KHR</option>
+            <option class="KID" id="KID" value="KID">KID</option>
+            <option class="KMF" id="KMF" value="KMF">KMF</option>
+            <option class="KPW" id="KPW" value="KPW">KPW</option>
+            <option class="KRW" id="KRW" value="KRW">KRW</option>
+            <option class="KWD" id="KWD" value="KWD">KWD</option>
+            <option class="KYD" id="KYD" value="KYD">KYD</option>
+            <option class="KZT" id="KZT" value="KZT">KZT</option>
+            <option class="LAK" id="LAK" value="LAK">LAK</option>
+            <option class="LBP" id="LBP" value="LBP">LBP</option>
+            <option class="LKR" id="LKR" value="LKR">LKR</option>
+            <option class="LRD" id="LRD" value="LRD">LRD</option>
+            <option class="LSL" id="LSL" value="LSL">LSL</option>
+            <option class="LYD" id="LYD" value="LYD">LYD</option>
+            <option class="MAD" id="MAD" value="MAD">MAD</option>
+            <option class="MDL" id="MDL" value="MDL">MDL</option>
+            <option class="MGA" id="MGA" value="MGA">MGA</option>
+            <option class="MKD" id="MKD" value="MKD">MKD</option>
+            <option class="MMK" id="MMK" value="MMK">MK</option>
+            <option class="MNT" id="MNT" value="MNT">MNT</option>
+            <option class="MOP" id="MOP" value="MOP">MOP</option>
+            <option class="MRU" id="MRU" value="MRU">MRU</option>
+            <option class="MUR" id="MUR" value="MUR">MUR</option>
+            <option class="MVR" id="MVR" value="MVR">MVR</option>
+            <option class="MWK" id="MWK" value="MWK">MWK</option>
+            <option class="MXN" id="MXN" value="MXN">MXN</option>
+            <option class="MYR" id="MYR" value="MYR">MYR</option>
+            <option class="MZN" id="MZN" value="MZN">MZN</option>
+            <option class="NAD" id="NAD" value="NAD">NAD</option>
+            <option class="NGN" id="NGN" value="NGN">NGN</option>
+            <option class="NIO" id="NIO" value="NIO">NIO</option>
+            <option class="NOK" id="NOK" value="NOK">NOK</option>
+            <option class="NPR" id="NPR" value="NPR">NPR</option>
+            <option class="NZD" id="NZD" value="NZD">NZD</option>
+            <option class="OMR" id="OMR" value="OMR">OMR</option>
+            <option class="PAB" id="PAB" value="PAB">PAB</option>
+            <option class="PEN" id="PEN" value="PEN">PEN</option>
+            <option class="PGK" id="PGK" value="PGK">PGK</option>
+            <option class="PHP" id="PHP" value="PHP">PHP</option>
+            <option class="PKR" id="PKR" value="PKR">PKR</option>
+            <option class="PLN" id="PLN" value="PLN">PLN</option>
+            <option class="PRB" id="PRB" value="PRB">PRB</option>
+            <option class="PYG" id="PYG" value="PYG">PYG</option>
+            <option class="QAR" id="QAR" value="QAR">QAR</option>
+            <option class="RON" id="RON" value="RON">RON</option>
+            <option class="RSD" id="RSD" value="RSD">RSD</option>
+            <option class="RUB" id="RUB" value="RUB">RUB</option>
+            <option class="RWF" id="RWF" value="RWF">RWF</option>
+            <option class="SAR" id="SAR" value="SAR">SAR</option>
+            <option class="SEK" id="SEK" value="SEK">SEK</option>
+            <option class="SGD" id="SGD" value="SGD">SGD</option>
+            <option class="SHP" id="SHP" value="SHP">SHP</option>
+            <option class="SLL" id="SLL" value="SLL">SLL</option>
+            <option class="SLS" id="SLS" value="SLS">SLS</option>
+            <option class="SOS" id="SOS" value="SOS">SOS</option>
+            <option class="SRD" id="SRD" value="SRD">SRD</option>
+            <option class="SSP" id="SSP" value="SSP">SSP</option>
+            <option class="STN" id="STN" value="STN">STN</option>
+            <option class="SYP" id="SYP" value="SYP">SYP</option>
+            <option class="SZL" id="SZL" value="SZL">SZL</option>
+            <option class="THB" id="THB" value="THB">THB</option>
+            <option class="TJS" id="TJS" value="TJS">TJS</option>
+            <option class="TMT" id="TMT" value="TMT">TMT</option>
+            <option class="TND" id="TND" value="TND">TND</option>
+            <option class="TOP" id="TOP" value="TOP">TOP</option>
+            <option class="TRY" id="TRY" value="TRY">TRY</option>
+            <option class="TTD" id="TTD" value="TTD">TTD</option>
+            <option class="TVD" id="TVD" value="TVD">TVD</option>
+            <option class="TWD" id="TWD" value="TWD">TWD</option>
+            <option class="TZS" id="TZS" value="TZS">TZS</option>
+            <option class="UAH" id="UAH" value="UAH">UAH</option>
+            <option class="UGX" id="UGX" value="UGX">UGX</option>
+            <option class="USD" id="USD" value="USD">USD</option>
+            <option class="UYU" id="UYU" value="UYU">UYU</option>
+            <option class="UZS" id="UZS" value="UZS">UZS</option>
+            <option class="VES" id="VES" value="VES">VES</option>
+            <option class="VND" id="VND" value="VND">VND</option>
+            <option class="VUV" id="VUV" value="VUV">VUV</option>
+            <option class="WST" id="WST" value="WST">WST</option>
+            <option class="XAF" id="XAF" value="XAF">XAF</option>
+            <option class="XCD" id="XCD" value="XCD">XCD</option>
+            <option class="XOF" id="XOF" value="XOF">XOF</option>
+            <option class="XPF" id="XPF" value="XPF">XPF</option>
+            <option class="ZAR" id="ZAR" value="ZAR">ZAR</option>
+            <option class="ZMW" id="ZMW" value="ZMW">ZMW</option>
+            <option class="ZWB" id="ZWB" value="ZWB">ZWB</option>
+        </select>
+
+    </div>
+</div>
+
+<script src="./js/index.js"></script>
 </body>
 
 </html>

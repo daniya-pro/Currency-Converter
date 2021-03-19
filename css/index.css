@@ -2,32 +2,101 @@
   padding: 70px 0 !important;
   height: 100% !important;
 }
-.currency-container{position: relative;}
-.currency {
-  border: none !important;
-  height: 30px !important;
-  position: absolute;
-  right: 5%;
-  bottom:20px;
-}
-option {
-  background: white;
-}
-.redbg {
-    padding: 6% 5px 6% 5px;
 
-  background-image: linear-gradient(
-    to bottom left,
-    #ff4c4a,
-    #fe9c94
-  ) !important;
+select {
+  background: transparent !important;
+  color: white;
 }
+
+.currency2-container,.currency-container {
+  position: relative;
+}
+
+#date{
+
+margin-left: 5px;
+
+}
+
+.bluish{
+
+  color:#188ff1; 
+  border-bottom:1px solid #19b7fb !important;
+}
+
+
+.bg-cyan{
+  
+  
+    
+    margin-top: 0.5px !important;
+    left: 1px !important;
+    height: 376px !important;
+    width: 100% !important;
+  
+}
+.z-index-1{z-index: 1 !important;}
+body{
+
+
+background-color: white !important;
+
+}
+.absolute{position: absolute !important;}
+.iconify {
+  
+  
+  bottom: -15px;
+  height: 30px;
+  right: 15px;
+  color:#19b7fb;
+  background-color: white;
+  width: 30px;
+  box-shadow: 4px 6px 36px #c3c2c2;
+
+}
+
+.relative{position: relative;}
+
+
+.currencyInp {
+  font-size: xx-large
+}
+.currency{  border: none !important;
+}
+.currency2,.currency {
+  height: 30px !important;
+  right: 5%;
+  bottom: 20px;
+}
+
+.currency2{color: #188ff1; outline: none !important;
+border: none !important;
+}
+.top-10{
+
+margin-top:10%;
+
+}
+.top-9{margin-top: 9% !important;}
+.top-5{margin-top: 5%;}
+
+.bg-cyan {
+  padding: 6% 5px 6% 5px;
+
+  background-image: linear-gradient(to bottom left,
+  #188ff8  ,
+      cyan) !important;
+}
+
 .t-center {
   text-align: center !important;
 }
+
 .t-right {
   text-align: right !important;
 }
+
 .inline-block {
   display: inline-block;
 }
@@ -44,7 +113,7 @@ option {
 }
 
 .Input {
-  margin-left: 20%;
+  margin-left: 25%!important;
   border: none;
   border-bottom: 1px solid white;
   width: 50%;
@@ -53,6 +122,11 @@ option {
 
 .xx-large {
   font-size: xx-large;
+}
+
+.xxx-large {
+  font-size: -webkit-xxx-large;
+  font-size: xxx-large;
 }
 
 input[type="number"],
