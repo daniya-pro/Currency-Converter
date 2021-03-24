@@ -11,11 +11,13 @@
 </head>
 
 <body>
+    <div id='spinner' class="spinner" style="display: none !important;"></div>
+<div id="container" class="container">
     <div class="block bg-cyan relative">
         <span class="white top-5 curr" id="date">26 June 21</span>
 <div class='t-center'><h2 class="curr currencyInp white top-5">Currency</h2></div>
-<input class="margineleft10px Input curr white xxx-large curr t-center" type="Number">
-<span class="absolute iconify" data-icon="mdi-swap-vertical" data-inline="false"></span>
+<input class="margineleft10px Input curr white xxx-large curr t-center" id="switchFrom" type="Number">
+<span class="absolute iconify" data-icon="mdi-swap-vertical" id="icon" onclick="switchCurrency()" data-inline="false"></span>
 
 <div class="t-right currency-container">
             <select class="absolute currency inline-block" id="currencyList">
@@ -191,13 +193,14 @@
     </div>
     <br>
 <div class="swapTo-container">
-    <div class='top-9 InputContainer'><input class="Input curr bluish top5 xxx-large curr t-center" type="Number">
+    <div class='top-9 InputContainer'><input disabled id="switchedValue" class="Input curr bluish top5 xxx-large curr t-center" type="Number">
     </div>
     <div class="t-right currency2-container">
         <select class="currency2 inline-block" id="currencyList2">
             <option disabled>Most popular</option>
 
-            <option class="USD">USD</option>
+            <option class="AED" id="AED" value="AED">AED</option>
+
 
             <option disabled>──────────</option>
 
@@ -364,6 +367,7 @@
         </select>
 
     </div>
+</div>
 </div>
 
 <script src="./js/index.js"></script>

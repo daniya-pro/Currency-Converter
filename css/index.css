@@ -43,19 +43,59 @@ background-color: white !important;
 
 }
 .absolute{position: absolute !important;}
+.spinner {
+  height: 0;
+  width: 0;
+  padding: 15px;
+  border: 6px solid #ccc;
+  border-right-color: #888;
+  border-radius: 22px;
+animation: rotate 1s infinite linear;
+  /* left, top and position just for the demo! */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+@keyframes rotate {
+  /* 100% keyframe for  clockwise. 
+     use 0% instead for anticlockwise */
+  100% {
+  transform: rotate(360deg);
+  }
+}
 .iconify {
   
   
   bottom: -15px;
   height: 30px;
   right: 15px;
+  z-index: 1;
   color:#19b7fb;
   background-color: white;
   width: 30px;
   box-shadow: 4px 6px 36px #c3c2c2;
+  animation-name:dark-to-light;
+animation-duration: 0.4s;
+}
+.iconify:hover{
+  box-shadow: -1px 5px 15px 0px #c3c2c2;
+animation-name:light-to-dark;
+animation-duration: 0.5s;
 
 }
-
+@keyframes light-to-dark {
+  from {  box-shadow: 4px 6px 36px #c3c2c2;
+  }
+  to {  box-shadow: -1px 5px 15px 0px #c3c2c2;
+  }
+}
+@keyframes dark-to-light {
+  from { box-shadow: -1px 5px 15px 0px #c3c2c2; 
+  }to {  box-shadow: 4px 6px 36px #c3c2c2;
+  
+  }
+}
 .relative{position: relative;}
 
 
@@ -78,6 +118,7 @@ border: none !important;
 margin-top:10%;
 
 }
+.none{display: none}
 .top-9{margin-top: 9% !important;}
 .top-5{margin-top: 5%;}
 
