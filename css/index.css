@@ -43,27 +43,7 @@ background-color: white !important;
 
 }
 .absolute{position: absolute !important;}
-.spinner {
-  height: 0;
-  width: 0;
-  padding: 15px;
-  border: 6px solid #ccc;
-  border-right-color: #888;
-  border-radius: 22px;
-animation: rotate 1s infinite linear;
-  /* left, top and position just for the demo! */
-  position: absolute;
-  left: 50%;
-  top: 50%;
-}
 
-@keyframes rotate {
-  /* 100% keyframe for  clockwise. 
-     use 0% instead for anticlockwise */
-  100% {
-  transform: rotate(360deg);
-  }
-}
 .iconify {
   
   
@@ -118,7 +98,6 @@ border: none !important;
 margin-top:10%;
 
 }
-.none{display: none}
 .top-9{margin-top: 9% !important;}
 .top-5{margin-top: 5%;}
 
