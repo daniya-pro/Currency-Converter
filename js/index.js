@@ -10,7 +10,8 @@ var switchedValue =document.getElementById("switchedValue");
 var va1 = e.value;
 var va2 = e2.value;
 //all variables ends here
-//functions starts
+//functions starts 
+
 function drdown(data) {
   var value1 = e.value;
   var value2 = e2.value;
