@@ -28,8 +28,7 @@ function drdown(data) {
 
 }
 function fetchfunc() {
-  var str=switchFrom.value
-      switchFrom.value = str.replace(/e/g, '')
+ 
   if(typeof setT !== "undefined"){
         clearTimeout(setT);
       } 
