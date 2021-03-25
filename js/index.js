@@ -28,17 +28,19 @@ function drdown(data) {
 
 }
 function fetchfunc() {
-    if(typeof setT !== "undefined"){
+  var str=switchFrom.value
+      switchFrom.value = str.replace(/e/g, '')
+  if(typeof setT !== "undefined"){
         clearTimeout(setT);
       } 
-    switchFrom.value.replace(/\D+/g, '')
     fetch(
 
     `https://free.currconv.com/api/v7/convert?q=${va1}_${va2}&compact=ultra&apiKey=ef6861ff62c446fce20a`
   )
     .then((d) => d.json())
     .then((data) =>{ 
-      
+      var str=switchFrom.value
+      switchFrom.value = str.replace(/e/g, '')
         console.log(data);
     var switchTo =data[Object.keys(data)[0]];
 
