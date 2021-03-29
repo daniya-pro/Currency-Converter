@@ -15,7 +15,7 @@ select {
 .currency2-container,.currency-container {
   position: relative;
 }
-
+ .currency{background-color:#19b7fb !important;}
 #date{
 
 margin-left: 5px;
